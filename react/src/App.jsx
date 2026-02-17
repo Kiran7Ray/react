@@ -23,10 +23,39 @@ import FocusInput from "./components/FocusInput";
 //   );
 // }
 
+// export default function App() {
+//   return (
+//     <div>
+//       <FocusInput />
+//     </div>
+//   );
+// }
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navigation from "./components/Navigation";
+import Home from "./components/Home";
+import About from "./components/About";
+import UserProfile from "./components/UserProfile";
+
 export default function App() {
   return (
-    <div>
-      <FocusInput />
-    </div>
+    <BrowserRouter>
+      <div style={{ padding: 20 }}>
+        <h1>React Routing Example</h1>
+
+        {/* Navigation links */}
+        <Navigation />
+
+        <hr />
+
+        {/* Routes */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/user/:userId" element={<UserProfile />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
