@@ -60,31 +60,43 @@ import FocusInput from "./components/FocusInput";
 //   );
 // }
 
-import Card from "./components/Card";
+// import Card from "./components/Card";
+
+// export default function App() {
+//   return (
+//     <div style={{ padding: 20 }}>
+//       <h1>Card Component Demo</h1>
+
+//       {/* Card 1 */}
+//       <Card>
+//         <p>This is a paragraph inside card</p>
+//       </Card>
+
+//       {/* Card 2 */}
+//       <Card>
+//         <button>Click Me</button>
+//       </Card>
+
+//       {/* Card 3 */}
+//       <Card>
+//         <h3>Fruits</h3>
+//         <ul>
+//           <li>Apple</li>
+//           <li>Banana</li>
+//         </ul>
+//       </Card>
+//     </div>
+//   );
+// }
+
+import Grandparent from "./components/Grandparent";
 
 export default function App() {
   return (
     <div style={{ padding: 20 }}>
-      <h1>Card Component Demo</h1>
+      <h1>Props Drilling Demo</h1>
 
-      {/* Card 1 */}
-      <Card>
-        <p>This is a paragraph inside card</p>
-      </Card>
-
-      {/* Card 2 */}
-      <Card>
-        <button>Click Me</button>
-      </Card>
-
-      {/* Card 3 */}
-      <Card>
-        <h3>Fruits</h3>
-        <ul>
-          <li>Apple</li>
-          <li>Banana</li>
-        </ul>
-      </Card>
+      <Grandparent />
     </div>
   );
 }
