@@ -4,6 +4,7 @@ import LoginStatus from "./components/LoginStatus";
 import RegistrationForm from "./components/RegistrationForm";
 import WindowResizeListener from "./components/WindowResizeListener";
 import FetchUsers from "./components/FetchUsers";
+import FocusInput from "./components/FocusInput";
 
 // export default function App() {
 //   const laptops = [
@@ -25,7 +26,7 @@ import FetchUsers from "./components/FetchUsers";
 export default function App() {
   return (
     <div>
-      <FetchUsers />
+      <FocusInput />
     </div>
   );
 }
