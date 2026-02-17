@@ -1,5 +1,6 @@
 import ProductCard from "./components/ProductCard";
 import Counter from "./components/Counter";
+import LoginStatus from "./components/LoginStatus";
 
 // export default function App() {
 //   const laptops = [
@@ -21,7 +22,7 @@ import Counter from "./components/Counter";
 export default function App() {
   return (
     <div>
-      <Counter />
+      <LoginStatus />
     </div>
   );
 }
