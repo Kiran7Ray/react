@@ -1,6 +1,7 @@
 import ProductCard from "./components/ProductCard";
 import Counter from "./components/Counter";
 import LoginStatus from "./components/LoginStatus";
+import RegistrationForm from "./components/RegistrationForm";
 
 // export default function App() {
 //   const laptops = [
@@ -22,7 +23,7 @@ import LoginStatus from "./components/LoginStatus";
 export default function App() {
   return (
     <div>
-      <LoginStatus />
+      <RegistrationForm />
     </div>
   );
 }
