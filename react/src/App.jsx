@@ -2,6 +2,7 @@ import ProductCard from "./components/ProductCard";
 import Counter from "./components/Counter";
 import LoginStatus from "./components/LoginStatus";
 import RegistrationForm from "./components/RegistrationForm";
+import WindowResizeListener from "./components/WindowResizeListener";
 
 // export default function App() {
 //   const laptops = [
@@ -23,7 +24,7 @@ import RegistrationForm from "./components/RegistrationForm";
 export default function App() {
   return (
     <div>
-      <RegistrationForm />
+      <WindowResizeListener />
     </div>
   );
 }
