@@ -3,6 +3,7 @@ import Counter from "./components/Counter";
 import LoginStatus from "./components/LoginStatus";
 import RegistrationForm from "./components/RegistrationForm";
 import WindowResizeListener from "./components/WindowResizeListener";
+import FetchUsers from "./components/FetchUsers";
 
 // export default function App() {
 //   const laptops = [
@@ -24,7 +25,7 @@ import WindowResizeListener from "./components/WindowResizeListener";
 export default function App() {
   return (
     <div>
-      <WindowResizeListener />
+      <FetchUsers />
     </div>
   );
 }
